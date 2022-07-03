@@ -11,7 +11,7 @@ async def echo_and_ban(message: types.Message):
     if message.text.startswith('pin'):
         await bot.pin_chat_message(message.chat.id, message.message_id)
 
-    if message.text.lower() == 'dice':
+    if message.text.lower() == 'game':
         await bot.send_dice(message.chat.id, emoji='⚽')
 
 
